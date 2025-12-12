@@ -1,6 +1,6 @@
 {
-    "LOBBY_HOST": "127.0.0.1",
+    "LOBBY_HOST": "140.113.235.151",
     "LOBBY_PORT": 10050,
-    "FILE_HOST": "127.0.0.1",
+    "FILE_HOST": "140.113.235.151",
     "FILE_PORT": 10060
 }
