@@ -1,12 +1,6 @@
 {
-<<<<<<< HEAD
-    "LOBBY_HOST": "114.113.17.11",
-    "LOBBY_PORT": 10050,
-    "FILE_HOST": "114.113.17.11",
-=======
     "LOBBY_HOST": "140.113.17.11",
     "LOBBY_PORT": 10050,
     "FILE_HOST": "140.113.17.11",
->>>>>>> 4cabacc0638fa56e3f6ab2ea34d419c8861b99ab
     "FILE_PORT": 10060 
 }
