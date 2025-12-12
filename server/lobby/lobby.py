@@ -894,11 +894,13 @@ def handle_start_game(request: dict, sock: socket.socket) -> dict:
     proc = subprocess.Popen(cmd, cwd=game_server_dir)
     game_processes[room_id] = proc
 
+    remote_game_host = "140.113.17.11"
+
     evt = {
         "cmd": "game_start",
         "room_id": room_id,
         "game_id": room.get("game_id"),
-        "game_host": game_host,
+        "game_host": remote_game_host,
         "game_port": game_port,
         "game_version": game_version,
         "game_name": game_name,
