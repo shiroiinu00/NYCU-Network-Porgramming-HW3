@@ -876,7 +876,7 @@ def handle_start_game(request: dict, sock: socket.socket) -> dict:
             "message": "need at least 2 players"
         }
     
-    game_host = "0.0.0.0"
+    game_host = "140.113.17.11"
     game_port = pick_free_port()
     game_id = room_states[room_id].get("game_id")
     game = games_repo.get_game_by_id(game_id)
