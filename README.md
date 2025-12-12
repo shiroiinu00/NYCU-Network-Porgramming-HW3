@@ -1,9 +1,8 @@
 # Network Programming Hw3 - Game store system
 
-
-## Each role
+## Run the client program
 > Before run the client program, ensure the cwd is the root of the project
-### player 
+### Player 
 - run the program: `python -m player_client.main_gui`
 - edit the port and address: you can modify the `config.json` in the `player_client/`
 
