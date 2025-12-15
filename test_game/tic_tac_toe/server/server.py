@@ -44,11 +44,11 @@ class TicTacToeServer:
             while self.running:
                 with self.lock:
                     if len(self.players) >= self.min_players: break
-                    try:
-                        c, addr = srv.accept()
-                    except socket.timeout:
-                        continue
-                    threading.Thread(target=self.handle_client, args=(c, addr), daemon=True).start()
+                try:
+                    c, addr = srv.accept()
+                except socket.timeout:
+                    continue
+                threading.Thread(target=self.handle_client, args=(c, addr), daemon=True).start()
             
             if len(self.players) < 2:
                 return

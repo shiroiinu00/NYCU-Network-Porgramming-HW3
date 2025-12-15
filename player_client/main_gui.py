@@ -113,6 +113,7 @@ class PlayerClientApp(tk.Tk):
             info = msg
             username = self.get_current_user()
             game_dir = Path(__file__).parent / "players" / username / "games" / f"{info.get("game_id")}_{info.get("game_name")}" / f"v{info.get("game_version")}"
+            print("game dir exists? ", game_dir.exists())
             if game_dir.exists():
 
                 print("game dir is ",game_dir)
